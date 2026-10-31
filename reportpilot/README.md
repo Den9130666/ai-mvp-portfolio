@@ -1,7 +1,7 @@
-# reportpilot
+# ReportPilot
 
-Independent browser module for the reportpilot portfolio demo.
+Browser-based CSV analytics MVP. Supports UTF-8 BOM, comma/semicolon separators, quoted fields, basic row validation, category totals, date totals, proportional bars, and summary CSV export. Input format: date,amount,category. Max file size: 2 MB.
 
-Live demo: https://portfolio.omniq.space/reportpilot
+Data is processed locally in the browser; no server upload or external analytics API.
 
-This is a browser-only prototype. No server-side persistence or real AI/OCR.
+Live: https://portfolio.omniq.space/reportpilot/
