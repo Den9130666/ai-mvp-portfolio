@@ -1,2 +1,2 @@
-function exportCargo(){download('cargodesk.csv',csv(loadCargo(),['id','client','origin','dest','cargo','status','createdAt']))}
+function exportCargo(){xlsxExport('cargodesk.xlsx',loadCargo(),['id','client','origin','dest','cargo','status','createdAt'],['ID','Клиент','Откуда','Куда','Груз','Статус','Создано'])}
 function changeCargo(id,status,note){const rows=loadCargo();const row=rows.find(item=>item.id===id);if(!row||!STATUSES.includes(status)||row.status===status)return;row.status=status;row.history=Array.isArray(row.history)?row.history:[];row.history.push({at:new Date().toISOString(),status:status,note:String(note).slice(0,300)});saveCargo(rows);renderCargo();showCargo(id)}
