@@ -27,3 +27,14 @@ Vanilla HTML, CSS and JavaScript. No dependencies or secrets. Shared development
 ## Roadmap
 
 Split demos into isolated modules, add unit/E2E tests, real backend persistence, role-based access, optional AI/OCR adapters and CI.
+
+## Source structure
+
+- `index.html` — shell and script loading order.
+- `assets/styles.css` — shared design system.
+- `assets/core.js` — routing, storage, CSV helpers and navigation.
+- `assets/main.js` — initial route selection.
+- `<demo>/app.js` — each demo's business logic.
+- `<demo>/README.md` and `<demo>/AGENTS.md` — feature-specific notes.
+
+All five modules currently share a single browser page and global functions; this is a first modularization step, not fully isolated application packaging.
