@@ -38,3 +38,6 @@ Split demos into isolated modules, add unit/E2E tests, real backend persistence,
 - `<demo>/README.md` and `<demo>/AGENTS.md` — feature-specific notes.
 
 All five modules currently share a single browser page and global functions; this is a first modularization step, not fully isolated application packaging.
+
+## Standalone entrypoints
+Each demo has its own `index.html` and `app.js`; the home page no longer loads all demo scripts. Shared helpers and styles remain in `assets/`. Run `bash tests/smoke.sh` for endpoint and syntax checks.
