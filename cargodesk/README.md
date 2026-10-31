@@ -1,7 +1,5 @@
-# cargodesk
+# CargoDesk
 
-Independent browser module for the cargodesk portfolio demo.
+Logistics request management demo. Roadmap: request cards, status history, search, CSV export and validation. Browser-only storage, no authentication or server database.
 
-Live demo: https://portfolio.omniq.space/cargodesk
-
-This is a browser-only prototype. No server-side persistence or real AI/OCR.
+Live: https://portfolio.omniq.space/cargodesk/
